@@ -15,7 +15,7 @@ export const getDataSuccessCities = (data) => ({
 export const getDataCities = () => async(dispatch) => {
     try {
         dispatch(getDataLoadingCities());
-        let res = await fetch('http://localhost:8080/cities');
+        let res = await fetch('https://country-city-app-by-akash.herokuapp.com/cities');
         let data = await res.json();
         dispatch(getDataSuccessCities(data));
     } catch (error) {
@@ -26,7 +26,7 @@ export const getDataCities = () => async(dispatch) => {
 export const sortByPopulation = (order, country) => async(dispatch) => {
     try {
         dispatch(getDataLoadingCities());
-        let res = await fetch('http://localhost:8080/cities');
+        let res = await fetch('https://country-city-app-by-akash.herokuapp.com/cities');
         let data = await res.json();
         if(order === 'asc'){
             data.sort((a, b) => a.population - b.population);
@@ -50,7 +50,7 @@ export const filterByCountry = (country) => async(dispatch) => {
             return;
         }
         dispatch(getDataLoadingCities());
-        let res = await fetch('http://localhost:8080/cities?country=' + country);
+        let res = await fetch('https://country-city-app-by-akash.herokuapp.com/cities?country=' + country);
         let data = await res.json();
         
         dispatch(getDataSuccessCities(data));

@@ -23,7 +23,7 @@ function Country() {
         alert('Please fill input fields');
       }
       else{
-        await fetch('http://localhost:8080/countries', {
+        await fetch('https://country-city-app-by-akash.herokuapp.com/countries', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'

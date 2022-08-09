@@ -15,7 +15,7 @@ export const getDataSuccessCountries = (data) => ({
 export const getDataCountries = () => async(dispatch) => {
     try {
         dispatch(getDataLoadingCountries());
-        let res = await fetch('http://localhost:8080/countries');
+        let res = await fetch('https://country-city-app-by-akash.herokuapp.com/countries');
         let data = await res.json();
         dispatch(getDataSuccessCountries(data));
     } catch (error) {

@@ -21,7 +21,7 @@ function Home() {
 
   const handleDelete = async (id) => {
     try {
-      await fetch(`http://localhost:8080/cities/${id}`, {
+      await fetch(`https://country-city-app-by-akash.herokuapp.com/cities/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

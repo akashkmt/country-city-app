@@ -37,7 +37,7 @@ export default function TransitionsModal({item}) {
             alert('Please fill all fields');
             return;
         }
-        await fetch(`http://localhost:8080/cities/${item.id}`, {
+        await fetch(`https://country-city-app-by-akash.herokuapp.com/cities/${item.id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
