@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+}
+
+.table{
+  /* border: 1px solid red; */
+  margin: auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  
+}
+.table > thead > tr > th{
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+.table > tbody > tr > td{
+  /* border-bottom: 1px solid red; */
+  padding: 10px;
+}
+
+.table > thead > tr{
+  border-bottom: 2px solid gray;
+}
+.table > tbody > tr{
+  border-bottom: 1px solid gray;
+}
+.add-city-form{
+  /* border: 1px solid red; */
+  padding: 10px;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 10px;
+}
+.add-city-form > input{
+  /* border: 1px solid red; */
+  padding: 10px;
+}
+.add-city-form > select{
+  /* border: 1px solid red; */
+  padding: 11px;
+}
+.add-city-form > select > option{
+  /* border: 1px solid red; */
+  padding: 10px;
+}
